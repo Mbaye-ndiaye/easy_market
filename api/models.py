@@ -29,10 +29,10 @@ class CustomUser(AbstractUser):
     last_name = models.CharField(max_length=50, blank=True)
     telephone = models.CharField(max_length=17)
 
-    is_staff = models.BooleanField(default=False)
+    is_staff = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
-    is_superuser = models.BooleanField(default=False)
-    is_admin = models.BooleanField(default=False)
+    is_superuser = models.BooleanField(default=True)
+    is_admin = models.BooleanField(default=True)
     date_joined = models.DateTimeField(auto_now_add=True)
 
     USERNAME_FIELD = 'email'

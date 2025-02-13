@@ -8,8 +8,6 @@ class TypeDepenseSerializer(serializers.ModelSerializer):
 
 
 class DepenseSerializer(serializers.ModelSerializer):
-    # type_depense = TypeDepenseSerializer()
-
     class Meta:
         model = Depense
         fields = '__all__'

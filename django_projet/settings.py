@@ -121,12 +121,12 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
-CORS_ALLOW_ALL_ORIGINS = True  
+  
 
 # OU, pour autoriser seulement React (localhost:3000)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React en développement
+    "http://localhost:8081",  # React en développement
 ]
 
 # Autoriser les requêtes avec credentials (si nécessaire pour l'authentification)
@@ -162,7 +162,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
-AUTH_USER_MODEL = 'api.CustomUser'
+AUTH_USER_MODEL = 'auth.User'
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (

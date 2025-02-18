@@ -128,6 +128,15 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React en développement
     "http://localhost:8081",  # React en développement
 ]
+CORS_ALLOWED_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'HEAD',
+    'OPTIONS',
+]
 
 # Autoriser les requêtes avec credentials (si nécessaire pour l'authentification)
 CORS_ALLOW_CREDENTIALS = True

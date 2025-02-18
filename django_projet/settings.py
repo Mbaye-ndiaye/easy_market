@@ -126,7 +126,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # OU, pour autoriser seulement React (localhost:3000)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React en développement
-    "http://localhost:8081",  # React en développement
 ]
 CORS_ALLOWED_METHODS = [
     'GET',
